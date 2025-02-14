@@ -1,0 +1,25 @@
+{
+  "name": "event-driven-microservices",
+  "version": "1.0.0",
+  "description": "Event-Driven Microservices System",
+  "main": "index.js",
+  "scripts": {
+    "start:user": "node user-service/server.js",
+    "start:order": "node order-service/server.js",
+    "start:notification": "node notification-service/server.js",
+    "start:gateway": "node api-gateway/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.0.3",
+    "pg": "^8.11.3",
+    "prom-client": "^14.2.0",
+    "redis": "^4.6.10",
+    "express-rate-limit": "^6.7.0"
+  }
+}
